@@ -1,3 +1,4 @@
-import streamlit
-
-streamlit.title('My parents new healthy Dinner')
+# import module
+import streamlit as st
+# Title
+st.title("Hello GeeksForGeeks !!!")
