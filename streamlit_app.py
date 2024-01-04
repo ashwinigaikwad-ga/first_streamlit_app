@@ -18,7 +18,7 @@ fruits_selected = streamlit.multiselect("Pick some fruits:", list(my_fruit_list.
 fruits_to_show = my_fruit_list.loc[fruits_selected]
 
 # Display the table on the page.
-my_fruit_list = my_fruit_list.set_index('fruits_to_show')
+my_fruit_lists = my_fruit_list.set_index('fruits_to_show')
 
 
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
