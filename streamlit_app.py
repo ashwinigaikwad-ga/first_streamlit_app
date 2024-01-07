@@ -3,6 +3,9 @@ import streamlit
 import snowflake.connector
 
 streamlit.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
+streamlit.text('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
+streamlit.text('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
+
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_cur = my_cnx.cursor()
 my_cur.execute("SELECT CURRENT_USER(), CURRENT_ACCOUNT(), CURRENT_REGION()")
