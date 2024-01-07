@@ -41,13 +41,13 @@ my_data_row = my_cur.fetchone()
 streamlit.text("Hello from Snowflake:")
 streamlit.text(my_data_row)
 
-streamlit.text("The fruit load list")
-streamlit.text(my_data_row)
+# streamlit.text("The fruit load list")
+# streamlit.text(my_data_row)
 
-my_data_row = my_cur.fetchall()
-streamlit.header("Hello from Snowflake:")
-streamlit.dataframe(my_data_row)
+# my_data_row = my_cur.fetchall()
+# streamlit.header("Hello from Snowflake:")
+# streamlit.dataframe(my_data_row)
 
-streamlit.write('Thanks for adding',add_my_fruit)
-my_cur.execute("insert into FRUIT_LOAD_LIST values ('from streamlit')")
+# # streamlit.write('Thanks for adding',add_my_fruit)
+# my_cur.execute("insert into FRUIT_LOAD_LIST values ('from streamlit')")
 
