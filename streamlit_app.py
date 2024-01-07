@@ -50,6 +50,6 @@ streamlit.write('The user entered ', add_my_fruit)
 # streamlit.header("Hello from Snowflake:")
 # streamlit.dataframe(my_data_row)
 
-# # streamlit.write('Thanks for adding',add_my_fruit)
-# my_cur.execute("insert into FRUIT_LOAD_LIST values ('from streamlit')")
+streamlit.write('Thanks for adding',add_my_fruit)
+my_cur.execute("insert into FRUIT_LOAD_LIST values ('from streamlit')")
 
