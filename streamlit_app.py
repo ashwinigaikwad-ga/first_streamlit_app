@@ -2,7 +2,7 @@ import pandas
 import streamlit
 import snowflake.connector
 
-my_fruit_list=pandas.read.csv()
+
 streamlit.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
 streamlit.text('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
 streamlit.text('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
