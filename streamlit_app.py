@@ -17,6 +17,11 @@ fruits_to_show = my_fruit_list.loc[fruits_selected]
 # Display the table on the page.
 streamlit.dataframe(fruits_to_show)
 
+
+import requests
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+streamlit.text(fruityvice_response.json())
+
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_cur = my_cnx.cursor()
 my_cur.execute("select * from pc_rivery_db.public.fruit_load_list")
