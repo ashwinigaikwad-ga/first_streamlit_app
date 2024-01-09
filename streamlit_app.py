@@ -28,7 +28,7 @@ try:
  fruit_choice = streamlit.text_input('What fruit would you like information about?')
  if not fruit_choice:
     streamlit.error("Please select a fruit to get information:")
-  else:
+ else:
    back_from_function = get_fruityvise_data(fruit_choice)
    streamlit.dataframe(back_from_function)
   except URLError as e:
@@ -37,6 +37,7 @@ try:
 
 streamlit.stop()
 
+streamlit.header("The fruit load contains!")
 def get_fruit_load_list():
   with my_cnx.cursor() as my_cur:
     my_cur.execute("select * from fruit_load_list")
